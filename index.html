@@ -69,9 +69,16 @@
           <div class="alert success" id="formSuccess" hidden>
             Заявку відправлено. Дякуємо! (текст-заглушка)
           </div>
-
-          <form name="lead" method="POST" action="/index.html?sent=1#lead" data-netlify="true" netlify-honeypot="company">
-            <input type="hidden" name="form-name" value="lead">
+			
+			
+		<form name="lead" method="POST" data-netlify="true" netlify-honeypot="company">
+			<input type="hidden" name="form-name" value="lead">
+				<p style="display:none">
+				<label>Don’t fill this out: <input name="company"></label>
+				</p>
+	
+          <!-- <form name="lead" method="POST" action="/index.html?sent=1#lead" data-netlify="true" netlify-honeypot="company">
+            <input type="hidden" name="form-name" value="lead"> -->
 
             <!-- honeypot (антиспам) -->
             <p class="hp">
