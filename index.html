@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Головна - BRAND_NAME</title>
+  <meta name="description" content="Текст-заглушка для опису сторінки. Замініть на свій.">
+  <meta property="og:title" content="Головна - BRAND_NAME">
+  <meta property="og:description" content="Текст-заглушка для опису. Замініть на свій.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-placeholder.png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="На головну">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">BRAND_NAME</span>
+      </a>
+
+      <nav class="nav" aria-label="Головне меню">
+        <a href="index.html#products">Продукція</a>
+        <a href="index.html#benefits">Переваги</a>
+        <a href="index.html#textures">Фактури</a>
+        <a href="index.html#portfolio">Портфоліо</a>
+        <a href="index.html#catalogs">Каталог</a>
+        <a href="index.html#contacts">Контакти</a>
+        <a class="nav-cta" href="index.html#lead">Залишити заявку</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="badge">Текст-заглушка - бейдж</div>
+          <h1>Текст-заглушка для головного заголовка (H1)</h1>
+          <p class="lead">
+            Текст-заглушка для підзаголовка. Коротко поясни, що саме ти пропонуєш і для кого.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#lead" data-scroll>Залишити заявку</a>
+            <a class="btn btn-ghost" href="about.html">Про нас</a>
+          </div>
+
+          <ul class="hero-points">
+            <li>Пункт-заглушка - 1</li>
+            <li>Пункт-заглушка - 2</li>
+            <li>Пункт-заглушка - 3</li>
+          </ul>
+        </div>
+
+        <div class="hero-card" id="lead">
+          <div class="card-head">
+            <h2>Залишити заявку</h2>
+            <p class="muted">Текст-заглушка. Заповни форму - і ми зв'яжемося з вами.</p>
+          </div>
+
+          <div class="alert success" id="formSuccess" hidden>
+            Заявку відправлено. Дякуємо! (текст-заглушка)
+          </div>
+
+          <form name="lead" method="POST" action="/?sent=1#lead" data-netlify="true" netlify-honeypot="company">
+            <input type="hidden" name="form-name" value="lead">
+
+            <!-- honeypot (антиспам) -->
+            <p class="hp">
+              <label>Не заповнювати: <input name="company" autocomplete="off"></label>
+            </p>
+
+            <div class="field">
+              <label for="fullName">ПІБ *</label>
+              <input id="fullName" name="fullName" placeholder="Текст-заглушка" required>
+            </div>
+
+            <div class="field">
+              <label for="phone">Номер телефону *</label>
+              <input id="phone" name="phone" placeholder="+380..." inputmode="tel" required>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="name@example.com">
+            </div>
+
+            <div class="field">
+              <label for="message">Повідомлення</label>
+              <textarea id="message" name="message" rows="4" placeholder="Текст-заглушка"></textarea>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">Надіслати</button>
+
+            <p class="fine muted">
+              Натискаючи "Надіслати", ви погоджуєтесь із обробкою даних. Текст-заглушка.
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-head">
+          <h2>Продукція</h2>
+          <p class="muted">Текст-заглушка. Коротко опиши, що саме тут буде (категорії, послуги або товари).</p>
+        </div>
+
+        <div class="grid cards-3">
+          <article class="card">
+            <div class="card-tag">новинка</div>
+            <h3>Назва позиції - заглушка</h3>
+            <p class="muted">Опис-заглушка. 1-2 речення про цінність/ефект.</p>
+            <div class="card-meta">
+              <span class="price">Ціна - заглушка</span>
+              <a class="link" href="#lead" data-scroll>Отримати консультацію</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-tag">популярне</div>
+            <h3>Назва позиції - заглушка</h3>
+            <p class="muted">Опис-заглушка. 1-2 речення про цінність/ефект.</p>
+            <div class="card-meta">
+              <span class="price">Ціна - заглушка</span>
+              <a class="link" href="#lead" data-scroll>Отримати консультацію</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-tag">хіт</div>
+            <h3>Назва позиції - заглушка</h3>
+            <p class="muted">Опис-заглушка. 1-2 речення про цінність/ефект.</p>
+            <div class="card-meta">
+              <span class="price">Ціна - заглушка</span>
+              <a class="link" href="#lead" data-scroll>Отримати консультацію</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="center">
+          <a class="btn btn-ghost" href="#lead" data-scroll>Запросити матеріал на пробу</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="benefits">
+      <div class="container">
+        <div class="section-head">
+          <h2>Переваги</h2>
+          <p class="muted">Текст-заглушка. 2-3 речення про досвід, якість, контроль, сервіс.</p>
+        </div>
+
+        <div class="grid cards-3">
+          <article class="icon-card">
+            <div class="icon">✓</div>
+            <h3>Перевага - заглушка</h3>
+            <p class="muted">Текст-заглушка. Поясни перевагу конкретно і коротко.</p>
+          </article>
+
+          <article class="icon-card">
+            <div class="icon">★</div>
+            <h3>Перевага - заглушка</h3>
+            <p class="muted">Текст-заглушка. Поясни перевагу конкретно і коротко.</p>
+          </article>
+
+          <article class="icon-card">
+            <div class="icon">⚑</div>
+            <h3>Перевага - заглушка</h3>
+            <p class="muted">Текст-заглушка. Поясни перевагу конкретно і коротко.</p>
+          </article>
+        </div>
+
+        <div class="cta-strip">
+          <div>
+            <div class="cta-title">Текст-заглушка - короткий заклик</div>
+            <div class="muted">Текст-заглушка. Для дилерів/партнерів/консультацій.</div>
+          </div>
+          <a class="btn btn-primary" href="#lead" data-scroll>Відправити заявку</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="textures">
+      <div class="container">
+        <div class="section-head">
+          <h2>Фактури</h2>
+          <p class="muted">Текст-заглушка. Сітка прикладів фактур/ефектів з короткими підписами.</p>
+        </div>
+
+        <div class="grid textures">
+          <figure class="texture">
+            <div class="ph ph-texture"></div>
+            <figcaption>
+              <div class="cap-title">Назва фактури - заглушка</div>
+              <div class="muted">Короткий опис - заглушка</div>
+            </figcaption>
+          </figure>
+
+          <figure class="texture">
+            <div class="ph ph-texture"></div>
+            <figcaption>
+              <div class="cap-title">Назва фактури - заглушка</div>
+              <div class="muted">Короткий опис - заглушка</div>
+            </figcaption>
+          </figure>
+
+          <figure class="texture">
+            <div class="ph ph-texture"></div>
+            <figcaption>
+              <div class="cap-title">Назва фактури - заглушка</div>
+              <div class="muted">Короткий опис - заглушка</div>
+            </figcaption>
+          </figure>
+
+          <figure class="texture">
+            <div class="ph ph-texture"></div>
+            <figcaption>
+              <div class="cap-title">Назва фактури - заглушка</div>
+              <div class="muted">Короткий опис - заглушка</div>
+            </figcaption>
+          </figure>
+
+          <figure class="texture">
+            <div class="ph ph-texture"></div>
+            <figcaption>
+              <div class="cap-title">Назва фактури - заглушка</div>
+              <div class="muted">Короткий опис - заглушка</div>
+            </figcaption>
+          </figure>
+
+          <figure class="texture">
+            <div class="ph ph-texture"></div>
+            <figcaption>
+              <div class="cap-title">Назва фактури - заглушка</div>
+              <div class="muted">Короткий опис - заглушка</div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="note">
+          <div class="note-icon">✦</div>
+          <div>
+            <div class="note-title">Текст-заглушка</div>
+            <div class="muted">Знайшли фактуру, яка вам довподоби? Надішліть фото - і ми зробимо індивідуальний взірець. (редагується)</div>
+          </div>
+          <a class="btn btn-ghost" href="#lead" data-scroll>Відправити заявку</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <h2>Портфоліо</h2>
+          <p class="muted">Текст-заглушка. Тут буде сітка робіт/об'єктів.</p>
+        </div>
+
+        <div class="grid gallery">
+          <div class="ph ph-photo"></div>
+          <div class="ph ph-photo"></div>
+          <div class="ph ph-photo"></div>
+          <div class="ph ph-photo"></div>
+          <div class="ph ph-photo"></div>
+          <div class="ph ph-photo"></div>
+          <div class="ph ph-photo"></div>
+          <div class="ph ph-photo"></div>
+        </div>
+
+        <div class="center">
+          <a class="btn btn-primary" href="#lead" data-scroll>Хочу такий ефект - залишити заявку</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="catalogs">
+      <div class="container">
+        <div class="section-head">
+          <h2>Каталог</h2>
+          <p class="muted">Текст-заглушка. Посилання на PDF/файли/Google Drive або опис, як отримати каталоги.</p>
+        </div>
+
+        <div class="grid cards-2">
+          <article class="card">
+            <h3>Каталог ефектів - заглушка №1</h3>
+            <p class="muted">Текст-заглушка. Коротко поясни, що всередині.</p>
+            <a class="link" href="#">Відкрити (заглушка)</a>
+          </article>
+
+          <article class="card">
+            <h3>Каталог ефектів - заглушка №2</h3>
+            <p class="muted">Текст-заглушка. Коротко поясни, що всередині.</p>
+            <a class="link" href="#">Відкрити (заглушка)</a>
+          </article>
+        </div>
+
+        <div class="cta-strip">
+          <div>
+            <div class="cta-title">Заявка на партнерські умови</div>
+            <div class="muted">Текст-заглушка. Опиши для кого і що отримає.</div>
+          </div>
+          <a class="btn btn-primary" href="#lead" data-scroll>Відправити заявку</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="contacts">
+      <div class="container">
+        <div class="section-head">
+          <h2>Контакти</h2>
+          <p class="muted">Текст-заглушка. Адреси, телефони, месенджери, графік.</p>
+        </div>
+
+        <div class="grid cards-2">
+          <article class="card">
+            <h3>Місто - заглушка</h3>
+            <p class="muted">Адреса - заглушка</p>
+            <a class="link" href="tel:+380000000000">+380 00 000 00 00</a>
+          </article>
+
+          <article class="card">
+            <h3>Місто - заглушка</h3>
+            <p class="muted">Адреса - заглушка</p>
+            <a class="link" href="tel:+380000000000">+380 00 000 00 00</a>
+          </article>
+        </div>
+
+        <div class="map ph ph-map" role="img" aria-label="Карта - заглушка"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="brand-mini">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">BRAND_NAME</span>
+        </div>
+        <p class="muted">Текст-заглушка. Тут може бути короткий опис компанії, місія або слоган.</p>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <div class="footer-title">Навігація</div>
+          <a href="index.html#products">Продукція</a>
+          <a href="index.html#benefits">Переваги</a>
+          <a href="index.html#portfolio">Портфоліо</a>
+          <a href="about.html">Про нас</a>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Контакти</div>
+          <a href="tel:+380000000000">+380 00 000 00 00</a>
+          <a href="mailto:your@email.com">your@email.com</a>
+          <span class="muted">Місто, адреса - текст-заглушка</span>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Соцмережі</div>
+          <a href="#" aria-label="Telegram (заглушка)">Telegram</a>
+          <a href="#" aria-label="Instagram (заглушка)">Instagram</a>
+          <a href="#" aria-label="Facebook (заглушка)">Facebook</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="muted">(c) BRAND_NAME, 2026. All rights reserved</span>
+      </div>
+    </div>
+
+    <!--
+      "Політика конфіденційності" та "Умови" спеціально НЕ додані у футер,
+      щоб вони були "невидимі". Коли буде потрібно - додай посилання вручну.
+      Файли вже є: privacy.html, terms.html
+    -->
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
